@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "lint": "textlint **/*.{md,txt}",
+    "lint:fix": "textlint **/*.{md,txt} --fix"
+  },
+  "devDependencies": {
+    "@textlint-rule/textlint-rule-no-unmatched-pair": "^2.0.2",
+    "textlint": "^14.0.4",
+    "textlint-filter-rule-comments": "^1.2.2",
+    "textlint-rule-alive-link": "^0.1.2",
+    "textlint-rule-common-misspellings": "^1.0.1",
+    "textlint-rule-date-weekday-mismatch": "^1.0.6",
+    "textlint-rule-doubled-spaces": "^1.0.2",
+    "textlint-rule-en-capitalization": "^2.0.3",
+    "textlint-rule-no-todo": "^2.0.1",
+    "textlint-rule-preset-jtf-style": "^2.3.14",
+    "textlint-rule-stop-words": "^5.0.7",
+    "textlint-rule-terminology": "^5.0.9",
+    "textlint-rule-write-good": "^2.0.0"
+  }
+}
