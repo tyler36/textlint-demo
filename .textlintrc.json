@@ -1,0 +1,42 @@
+{
+  "filters": {
+    "comments": true
+  },
+  "rules": {
+    "preset-jtf-style": true,
+    "@textlint-rule/no-unmatched-pair": true,
+    // "alive-link": true,
+    "common-misspellings": true,
+    "date-weekday-mismatch": true,
+    "doubled-spaces": true,
+    "en-capitalization": true,
+    "no-todo": true,
+    "stop-words": {
+      "defaultWords": true,
+      "skip": [
+        "Blockquote",
+        "relative to"
+      ],
+      "words": [
+        [
+          "etc."
+        ],
+        [
+          "you can"
+        ],
+        [
+          "blacklist",
+          "denylist"
+        ],
+        [
+          "whitelist",
+          "allowlist"
+        ]
+      ]
+    },
+    "terminology": true,
+    "write-good": {
+      "eprime": false
+    }
+  }
+}

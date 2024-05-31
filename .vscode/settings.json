@@ -1,0 +1,6 @@
+{
+  // EXTENSION: Textlint
+  "textlint.nodePath": "./node_modules/.bin",
+  "textlint.configPath": "./.textlintrc",
+  "textlint.autoFixOnSave": true,
+}

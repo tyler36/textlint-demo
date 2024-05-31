@@ -1,0 +1,37 @@
+name: linting
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  linttext:
+    name: Lint text
+    runs-on: ubuntu-latest
+    steps:
+      - name: "☁️ checkout repository"
+        uses: actions/checkout@v4
+
+      - name: "🔧 Setup NODE/NPM"
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: "📦 Install Dependencies"
+        run: |
+          npm init -y
+          npm install
+
+      - name: "🧹 lint text and markdown files"
+        uses: tsuyoshicho/action-textlint@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          textlint_flags: "**/*.{txt,md}"
+          fail_on_error: true
