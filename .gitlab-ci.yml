@@ -4,12 +4,6 @@ stages:
 textlint:
   stage: lint
   image: node:20
-  script: |
-    npm ci
-    npm run lint -- --format junit --output-file logs/textlint-junit.xml
-  artifacts:
-    when: always
-    paths:
-      - logs/textlint-junit.xml
-    reports:
-      junit: logs/textlint-junit.xml
+  script:
+    - npm ci
+    - npm run lint
