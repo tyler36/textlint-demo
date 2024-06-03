@@ -150,10 +150,9 @@ Textlint rule for check doubled spaces in sentence.
 
 This textlint rule check todo mark.
 
-```txt
+
 ❌ TODO: this is TODO
 ❌ - [ ] TODO
-```
 
 - <https://github.com/textlint-rule/textlint-rule-no-todo>
 
@@ -193,7 +192,7 @@ Textlint rule that found Unexpanded Acronym.
 
 ### Textlint-rule-write-good
 
-Textlint rule to check your English writing styles with btford/write-good.
+textlint rule to check your English writing styles with btford/write-good.
 @see <https://github.com/btford/write-good#checks>
 
 ```txt
