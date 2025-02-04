@@ -7,10 +7,6 @@ on:
   pull_request:
     branches: [main]
 
-permissions: {
-  contents: read
-}
-
 concurrency:
   group: ${{ github.head_ref || github.run_id }}
   cancel-in-progress: true
@@ -19,6 +15,10 @@ jobs:
   linttext:
     name: Lint text
     runs-on: ubuntu-latest
+    permissions:
+      checks: write
+      contents: read
+      pull-requests: read
     steps:
       - name: "☁️ checkout repository"
         uses: actions/checkout@v4
