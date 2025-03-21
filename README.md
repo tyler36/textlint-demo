@@ -20,7 +20,7 @@
     - [Textlint-filter-rule-comments](#textlint-filter-rule-comments)
   - [Plugins](#plugins)
     - [Textlint-plugin-HTML](#textlint-plugin-html)
-  - [VScode](#vscode)
+  - [Visual Studio Code](#vscode)
 
 ## Overview
 
@@ -227,7 +227,7 @@ Add HTML support for textlint.
 
 - <https://github.com/textlint/textlint-plugin-HTML>
 
-### VScode
+### Visual Studio Code
 
 - Homepage: [taichi.vscode-textlint](https://marketplace.visualstudio.com/items?itemName=taichi.vscode-textlint)
 
