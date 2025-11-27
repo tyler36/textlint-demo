@@ -15,7 +15,7 @@
     "textlint-rule-no-todo": "^2.0.1",
     "textlint-rule-preset-jtf-style": "^3.0.3",
     "textlint-rule-stop-words": "^5.2.0",
-    "textlint-rule-terminology": "^5.2.15",
+    "textlint-rule-terminology": "^5.2.16",
     "textlint-rule-write-good": "^2.0.0"
   }
 }
